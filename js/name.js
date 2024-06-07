@@ -20,7 +20,7 @@ function addGuestbookEntry() {
     
     if (nameInput.value && textInput.value) {
         const newEntry = {
-            name: nameInput.value,  // 이름 추가
+            name: nameInput.value,  
             item: textInput.value
         };
 
@@ -44,7 +44,7 @@ function renderName(names) {
         const nameDiv = document.createElement("div");
         nameDiv.classList.add("example");
         nameDiv.innerHTML = `
-            <h1>${name.name}</h1>  <!-- 이름 표시 -->
+            <h1>${name.name}</h1>  
             <h2>${name.item}</h2>
             <button class="deletebtn" onclick="deleteName(${name.id})">x</button>
         `;
